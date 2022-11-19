@@ -1,0 +1,244 @@
+@import url("../css/font.css");
+
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #555;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+::after,
+::before,
+i,
+em,
+strong,
+b,
+code,
+address {
+  display: inline-block;
+}
+/* header */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1;
+  /* background-color: #f00; */
+}
+header > div {
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* nav button start*/
+header > div > nav {
+  position: relative;
+}
+header > div > nav > button {
+  width: 26px;
+  height: 16px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header > div > nav > button > span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid #fff;
+  transition: 300ms;
+}
+header > div > nav > button > span:nth-child(1) {
+  top: 0;
+}
+header > div > nav > button > span:nth-child(2) {
+  top: 50%;
+}
+header > div > nav > button > span:nth-child(3) {
+  top: 100%;
+}
+header > div > nav > button:hover > span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+header > div > nav > button:hover > span:nth-child(2) {
+  top: 50%;
+  transform: translateX(100%);
+  opacity: 0;
+}
+header > div > nav > button:hover > span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+header > div > nav > button:hover + div {
+  display: block;
+}
+header > div > nav > div {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background-color: transparent;
+  display: none;
+}
+header > div > nav > div > a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+/* nav button end */
+/* logo start */
+/* header > div > h1 {
+} */
+header > div > h1 > a {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Broadway";
+  color: white;
+}
+/* logo end */
+/* languages options start */
+header > div > div.lang {
+  position: relative;
+  font-size: 0.8rem;
+  color: #fff;
+}
+/* header > div > div.lang > p {
+} */
+header > div > div.lang > p:hover + ul {
+  display: block;
+}
+header > div > div.lang > p::after {
+  content: "►";
+  font-size: 8px;
+  transform: scale(0.8);
+}
+header > div > div.lang > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px solid #ddd;
+  border-bottom-width: 0;
+  transform: translateY(100%);
+}
+header > div > div.lang > ul > li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 20px;
+}
+/* languages options end */
+/* header end */
+/* mian css is in index.css */
+/* footer */
+.footer-wrapper {
+  width: 100%;
+  background: rgba(237, 244, 249);
+  margin-top: 149px;
+}
+.footer-items {
+  width: 66%;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-text p:nth-child(1) {
+  font-size: 40px;
+  letter-spacing: 1.8px;
+  margin-top: 138px;
+}
+.footer-text p:nth-child(1)::after {
+  content: "";
+  display: block;
+  border: 3px solid #000;
+  width: 96px;
+  margin-top: 53px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.footer-text p:nth-child(2) {
+  font-size: 16px;
+  letter-spacing: 0.72px;
+  margin-top: 51px;
+  color: #555;
+  margin-bottom: 80px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item1,
+.item2,
+.item3 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.item1:hover p,
+.item2:hover p,
+.item3:hover p {
+  color: orange;
+}
+.item1 img,
+.item2 img,
+.item3 img {
+  border-radius: 50%;
+}
+.item1 img:hover,
+.item2 img:hover,
+.item3 img:hover {
+  box-shadow: 10px 10px 10px #555;
+  transition: 300ms;
+  transform: scale(1.1);
+}
+.item1 p,
+.item2 p,
+.item3 p {
+  margin-top: 36px;
+  color: #555;
+  margin-bottom: 153px;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  background: rgb(187, 195, 214);
+}
+.footer-bottom p {
+  padding: 60px 0;
+  font-size: 16px;
+  color: #555;
+}
+/* button */
+/* popup */
+/* input */
+/* table */
